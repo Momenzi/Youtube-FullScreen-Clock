@@ -1,8 +1,18 @@
-# YouTube Fullscreen Clock
+<p align="center">
+  <img src="https://static.wikia.nocookie.net/logopedia/images/c/ce/Tampermonkey_ape.svg/revision/latest/scale-to-width-down/250?cb=20250613214252" alt="Tampermonkey logo" width="70">
+</p>
 
-A lightweight Tampermonkey userscript that displays a live clock in the top-right corner of YouTube videos while fullscreen mode is active.
+<h1 align="center">YouTube Fullscreen Clock</h1>
 
-The clock shows your computer's local time in `HH : MM : SS` format and disappears when you exit fullscreen.
+<p align="center">
+  A lightweight Tampermonkey userscript that adds a live clock to YouTube fullscreen mode.
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/MagPLnI.png" alt="YouTube Fullscreen Clock screenshot" width="200">
+</p>
+
+The clock displays your computer's local time in `HH : MM : SS` format in the top-right corner of the video. It appears only in fullscreen mode and disappears when you exit.
 
 ## Features
 
@@ -47,17 +57,19 @@ color: '#ffffff',
 background: 'rgba(0, 0, 0, 0.55)',
 ```
 
-- `top`: Distance from the top edge.
-- `right`: Distance from the right edge.
-- `fontSize`: Clock text size.
-- `color`: Clock text color.
-- `background`: Background color and transparency.
+| Setting | Description |
+| --- | --- |
+| `top` | Distance from the top edge |
+| `right` | Distance from the right edge |
+| `fontSize` | Clock text size |
+| `color` | Clock text color |
+| `background` | Background color and transparency |
 
 ## How It Works
 
 The script checks for an active fullscreen element and places the clock inside it. It updates the displayed time every second and removes the clock when fullscreen ends.
 
-The script uses the computer's local time and does not make external network requests.
+The script uses your computer's local time and does not make external network requests.
 
 ## Scope
 
